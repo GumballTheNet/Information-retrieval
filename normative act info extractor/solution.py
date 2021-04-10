@@ -931,12 +931,12 @@ class Solution:
         
 import os
 
-#directory = os.fsencode('../oot/tpc2020train/train/txts/')
-#trainn_data = []
-#names = []
-#for file in os.listdir(directory):
-    #with open('../oot/tpc2020train/train/txts/' + file.decode('utf-8')) as f:
-        #trainn_data.append(f.read())
-#sol = Solution()
-#k = sol.predict(trainn_data)
-#print(len(k))
+directory = os.fsencode('../oot/tpc2020train/train/txts/')
+trainn_data = []
+names = []
+for file in os.listdir(directory):
+    with open('../oot/tpc2020train/train/txts/' + file.decode('utf-8')) as f:
+        trainn_data.append(f.read())
+sol = Solution()
+k = sol.predict(trainn_data)
+print(len(k))
